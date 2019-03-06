@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/board"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/imageView111"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="dropin"
+            android:tag="0" />
+        <ImageView
+            android:id="@+id/imageView222"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="10dp"
+            android:onClick="dropin"
+            android:tag="1"/>
+        <ImageView
+            android:id="@+id/imageView333"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="10dp"
+            android:onClick="dropin"
+            android:tag="2"/>
+        <ImageView
+            android:id="@+id/imageView444"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:onClick="dropin"
+            android:tag="3"/>
+        <ImageView
+            android:id="@+id/imageView555"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="40dp"
+            android:onClick="dropin"
+            android:tag="4"/>
+        <ImageView
+            android:id="@+id/imageView666"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="40dp"
+            android:onClick="dropin"
+            android:tag="5"/>
+        <ImageView
+            android:id="@+id/imageView777"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:onClick="dropin"
+            android:tag="6"/>
+        <ImageView
+            android:id="@+id/imageView888"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="40dp"
+            android:onClick="dropin"
+            android:tag="7"/>
+
+        <ImageView
+            android:id="@+id/imageView999"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="40dp"
+            android:onClick="dropin"
+            android:tag="8"/>
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="146dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="157dp"
+        android:text="TextView"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/palayagainbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="162dp"
+        android:onClick="playagainm"
+        android:text="paly again"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>
